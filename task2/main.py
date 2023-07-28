@@ -7,7 +7,7 @@ from exception_decor import exception
 def index():
     if request.headers.get('X-Header'):
         return 'hello world'
-    raise HTTPResponse('Internal server error', status=500, headers={})
+    raise HTTPResponse('Internal server error - X-Header is required', status=500, headers={})
 
 
 run(host='localhost', port=8888)

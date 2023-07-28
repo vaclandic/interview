@@ -1,9 +1,14 @@
 # python main.py
 
-* python main.py
+1. Run application:
+```python3 main.py```
 
-* runs localhost:8888
+2. Check result in browser:
+http://localhost:8888
 
-* python 2.7
+3. Run nginx server: 
+```  nginx -g 'daemon off;'  ```
 
-* Header X-Header
+5. Add your configuration in nginx.conf to adjust nginx as a reverse proxy server
+
+5. Troubleshoot the app 
